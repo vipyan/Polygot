@@ -1,14 +1,14 @@
 {
-  "name": "Polygot",
-  "description": "A polyglot programming environment",
+  "name": "pollyglot",
+  "version": "1.0.0",
+  "description": "An AI translator app using OpenAI API",
+  "main": "index.js",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vite": "latest"
-  },
-  "devDependencies": {}
+    "vite": "^4.0.0"
+  }
 }
