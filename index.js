@@ -25,15 +25,7 @@ async function handleTranslate(e) {
   // call OpenAI
   try {
 
-    /*
-      Challenge:
-        1. Make a fetch request to the Worker url:
-          - The method should be 'POST'
-          - In the headers, the 'Content-Type' should be 'application/json'
-          - Set the body of the request to an empty string for now
-        2. Parse the response to a JavaScript object and assign it to a const
-        3. Log the response to the console to test
-    */
+   
       
     translateBtn.disabled = true;            // disable while loading
     const prompt = `Translate the following English text to ${lang}:\n\n"${text}"`;
