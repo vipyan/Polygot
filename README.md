@@ -1,3 +1,6 @@
+## 🌟 Live link
+[https://polygot-7h8.pages.dev/](https://polygot-7h8.pages.dev/)
+
 # PollyGlot 🌍🦜
 
 PollyGlot is a simple web application that translates user input text into multiple languages using an OpenAI-powered Cloudflare Worker. The app features a clean user interface, language selection options, and responsive interaction for a smooth translation experience.
@@ -65,4 +68,4 @@ so your OpenAI credentials are never exposed in frontend code.
 
 ## 📄 License
 
-MIT License. See [LICENSE](LICENSE)
+MIT
