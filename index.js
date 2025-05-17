@@ -1,9 +1,6 @@
-import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  dangerouslyAllowBrowser: true
-});
+
+
 
 // 2) Grab UI elements
 const comment      = document.getElementById("comments");
@@ -27,20 +24,43 @@ async function handleTranslate(e) {
 
   // call OpenAI
   try {
+
+    /*
+      Challenge:
+        1. Make a fetch request to the Worker url:
+          - The method should be 'POST'
+          - In the headers, the 'Content-Type' should be 'application/json'
+          - Set the body of the request to an empty string for now
+        2. Parse the response to a JavaScript object and assign it to a const
+        3. Log the response to the console to test
+    */
+      
     translateBtn.disabled = true;            // disable while loading
     const prompt = `Translate the following English text to ${lang}:\n\n"${text}"`;
-
-    const res = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
+    
+    const messages = 
+      [
         { role: "system", content: "You are a helpful translator." },
         { role: "user",   content: prompt }
-      ],
-      temperature: 0.0
-    });
+      ]
 
-    // extract translation
-    const translation = res.choices[0].message.content.trim();
+        const url = "https://openai-api-worker1.vipinkaniyanthara.workers.dev"
+        
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(messages)
+        })
+        const translation = await response.json()
+        
+
+
+
+        if (!response.ok) {
+          throw new Error(`Worker Error: ${data.error}`)
+      }
 
     // show it
     conversion.textContent = translation;
