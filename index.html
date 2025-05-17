@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Polygot</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="flex-container">
+
+            <img src="./assets/parrot.png" alt="logo of Polygot which is parrot" class="logo">
+            <div>
+                <h1 class="title">PollyGlot</h1>
+                <p class="subtitle">Perfect Translation Every Time</p>
+
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        
+        <form  class="flex-container-form">
+            <h2 class="sub-heading">Text to translate 👇</h2>
+            <h2 class="sub-heading hidden">Original text 👇</h2>
+            
+            <textarea id="comments"
+            class="utility-design"
+            name="comments"
+            rows="5"
+            cols="40"
+            
+            maxlength="500">How are you?</textarea>
+            
+            <h2 class="sub-heading">Select language 👇</h2>
+            <h2 class="sub-heading hidden">Your Translation 👇</h2>
+
+            
+            
+
+            <div class="flex-container-radio">
+                <div>
+                    <input type="radio" id="french" name="language" value="french" checked />
+                    <label for="french">French</label>
+                </div>
+            
+                <div>
+                    <input type="radio" id="spanish" name="language" value="spanish" />
+                    <label for="spanish">Spanish</label>
+                </div>
+            
+
+                <div>
+                    <input type="radio" id="japanese" name="language" value="japanese" />
+                    <label for="japanese">Japanese</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="malayalam" name="language" value="malayalam" />
+                    <label for="malayalam">Malayalam</label>
+                </div>
+            </div>
+
+            <div class=" utility-design hidden" id="convertion">
+                hi
+            </div>
+
+            
+
+            <button type="submit" class="btn" id="translate">Translate</button>
+            <button type="submit" class="btn hidden" id="start-over">Start Over</button>
+        </form>
+
+       
+
+    </main>
+    
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+*,
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+} 
+
+.header{
+    box-sizing: border-box;
+    padding: .5em 1em;
+    height: 25vh;
+    background-image: url('./assets/worldmap.png');
+    
+
+}
+
+.logo
+{
+    height: 100%;
+}
+
+.flex-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: .5em;
+    padding: 1em 2em;
+}
+
+
+.title{
+    color: #32CD32;
+    font-family: 'Big Shoulders',sans-serif;
+    font-size: 2.875rem;
+    font-weight: 800;
+    line-height: 150%;
+    margin: 0;
+}
+.subtitle{
+    
+    color: #FFFFFF;
+    font-size: .9rem;
+    font-weight: 600;
+   
+    
+}
+
+main{
+    margin: 2em 1em;
+    border: 3.5px solid black;
+    border-radius: 10px;
+    height: 60vh;
+}
+
+.sub-heading{
+    color: #035A9D;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+main textarea {
+  /* Disable the grab-handle in the bottom right */
+  resize: none;
+  
+}
+
+.flex-container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+    gap: 1.3em;
+    height: 100%;
+
+    
+    
+}
+.utility-design{
+     background-color: #EFF0F4;
+        border: none;
+        padding: 1em;
+        border-radius: 10px;
+        color: #333333;
+        font-size: 1.1rem;
+        font-weight: 600;
+        width: 80%;
+}
+
+.flex-container-radio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:70%;
+}
+
+.btn{
+    background-color: #035A9D;
+    color: #FFFFFF;
+    width: 70%;
+    height:50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.hidden{
+    display: none;
+}
+
+#convertion{
+    min-height: 120px;
+}
