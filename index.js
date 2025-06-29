@@ -70,7 +70,10 @@ async function handleTranslate(e) {
 
 // 5) Reset handler
 function handleStartOver(e) {
+  
   e.preventDefault();
+  comment.value = "";
+
 
   // hide & reset UI
   conversion.classList.add("hidden");
